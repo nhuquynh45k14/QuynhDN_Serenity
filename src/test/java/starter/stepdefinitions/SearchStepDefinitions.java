@@ -1,14 +1,10 @@
 package starter.stepdefinitions;
 
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import starter.navigation.NavigateTo;
 import starter.search.Perform;
-import starter.search.LookForInformation;
-import starter.search.WikipediaArticle;
 
 public class SearchStepDefinitions {
 

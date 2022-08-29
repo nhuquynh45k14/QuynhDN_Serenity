@@ -24,7 +24,7 @@ public class Perform {
 
     public static Performable ClickProduct(String product) {
         return Task.where("{0} click choose product",
-                Click.on(SearchPage.ProductName(product))
+                Click.on(ProductPage.ProductName(product))
         );
     }
 }
