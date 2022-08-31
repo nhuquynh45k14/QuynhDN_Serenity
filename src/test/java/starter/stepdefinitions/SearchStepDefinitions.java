@@ -18,7 +18,7 @@ public class SearchStepDefinitions {
 
     @Given("{actor} open HomePage")
     public void openHomePage(Actor actor) {
-        actor.wasAbleTo(NavigateTo.thePerromartHomePage());
+        actor.wasAbleTo(NavigateTo.perromartHomePage());
         actor.wasAbleTo(Perform.closePopup());
     }
 
@@ -43,7 +43,7 @@ public class SearchStepDefinitions {
 
     @When("{actor} verify product {string}")
     public void iVerifyProduct(Actor actor, String productName) {
-        actor.attemptsTo(Ensure.that(CartPage.nameProduct(productName)).hasText(productName));
+        actor.attemptsTo(Ensure.that(CartPage.productInCart(productName)).hasText(productName));
     }
 
     @When("{actor} click check out")

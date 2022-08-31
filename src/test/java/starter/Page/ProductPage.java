@@ -3,7 +3,7 @@ package starter.Page;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class ProductPage {
-    public static Target ProductName(String nameProduct){
+    public static Target productName(String nameProduct){
         return Target.the("PRODUCT").locatedBy("//div[text()='" + nameProduct + "']");
     }
     public static Target BUTTON_ADD_TO_CART = Target.the("add to cart").locatedBy("//span[contains(text(),'Add to cart')]");

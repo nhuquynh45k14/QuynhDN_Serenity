@@ -23,22 +23,22 @@ public class CucumberTestSuite {
     Actor Quynh;
     @Test
     public void verifyCart() {
-        Quynh.wasAbleTo(NavigateTo.thePerromartHomePage());
+        Quynh.wasAbleTo(NavigateTo.perromartHomePage());
         Quynh.wasAbleTo(Perform.closePopup());
         Quynh.attemptsTo(Perform.searchProduct(Product.searchTerm));
         Quynh.attemptsTo(Perform.clickProduct(product));
         Quynh.attemptsTo(Perform.addToCart());
-        Quynh.attemptsTo(Ensure.that(CartPage.nameProduct("Bronco Jerky Salmon Dog Treat 70g")).hasText("Bronco Jerky Salmon Dog Treat 70g"));
+        Quynh.attemptsTo(Ensure.that(CartPage.productInCart("Bronco Jerky Salmon Dog Treat 70g")).hasText("Bronco Jerky Salmon Dog Treat 70g"));
         Quynh.attemptsTo(Perform.clickCheckout());
     }
     @Test
     public void verifyInformation() {
-        Quynh.wasAbleTo(NavigateTo.thePerromartHomePage());
+        Quynh.wasAbleTo(NavigateTo.perromartHomePage());
         Quynh.wasAbleTo(Perform.closePopup());
         Quynh.attemptsTo(Perform.searchProduct(Product.searchTerm));
         Quynh.attemptsTo(Perform.clickProduct(product));
         Quynh.attemptsTo(Perform.addToCart());
-        Quynh.attemptsTo(Ensure.that(CartPage.nameProduct("Bronco Jerky Salmon Dog Treat 70g")).hasText("Bronco Jerky Salmon Dog Treat 70g"));
+        Quynh.attemptsTo(Ensure.that(CartPage.productInCart("Bronco Jerky Salmon Dog Treat 70g")).hasText("Bronco Jerky Salmon Dog Treat 70g"));
         Quynh.attemptsTo(Perform.clickCheckout());
         Quynh.attemptsTo(Perform.addShippingAddress(ShippingAddress.email, ShippingAddress.firstName, ShippingAddress.lastName,
                 ShippingAddress.address, ShippingAddress.apartment, ShippingAddress.postalCode, ShippingAddress.phone));
