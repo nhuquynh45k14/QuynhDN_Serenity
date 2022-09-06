@@ -1,10 +1,12 @@
-package starter.Page;
+package starter.Action;
 
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
+import starter.Page.*;
+
 
 public class Perform {
     public static Performable closePopup() {
